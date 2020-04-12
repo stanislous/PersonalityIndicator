@@ -1,0 +1,14 @@
+﻿@model PersonalityIndicator.ViewModels.QuestionWithAnswers
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<p>@Model.Question.Questions</p>
+
+<ul>
+    @foreach (var answer in Model.Answer)
+    {
+        <p>@answer.AnswerNumber. @answer.Answers</p>
+    }
+</ul>
